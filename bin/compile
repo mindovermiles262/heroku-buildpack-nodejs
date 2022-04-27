@@ -23,7 +23,9 @@ ENV_DIR=${3:-}
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 
 PACKAGE_JSON_PATH=$(find $BUILD_DIR -iname package.json -not -path "*node_modules/*")
-BUILD_DIR="$BUILD_DIR/$(dirname $PACKAGE_JSON_PATH)"
+echo "[*] Path package.json $PACKAGE_JSON_PATH"
+echo "[*] Dirname package.json $(dirname $PACKAGE_JSON_PATH)"
+BUILD_DIR="$(dirname $PACKAGE_JSON_PATH)"
 
 ### Load dependencies
 
