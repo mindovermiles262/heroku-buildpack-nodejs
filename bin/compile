@@ -24,8 +24,8 @@ BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 
 echo "[*] BUILD_DIR: $BUILD_DIR"
 echo "[*] List Files: $(ls -la)"
-echo "[*] Search for package.json"
-echo "$(find . -iname package.json)"
+echo "[*] Search for Storable.Access.AstriaPorta.sln"
+echo "$(find . -iname Storable.Access.AstriaPorta.sln)"
 echo "[*] CACHE_DIR: $CACHE_DIR"
 echo "[*] ENV_DIR: $ENV_DIR"
 echo "[*] BP_DIR: $BP_DIR"
